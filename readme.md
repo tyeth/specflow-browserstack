@@ -8,3 +8,4 @@ To run the samples:
 * Open a command prompt and run 
 
     powershell -file build.ps1
+* Check out [this blog](https://www.kenneth-truyers.net/2015/01/03/running-specflow-acceptance-tests-in-parallel-on-browserstack/) for more information.
