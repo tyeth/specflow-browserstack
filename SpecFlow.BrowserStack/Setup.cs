@@ -16,32 +16,20 @@ namespace SpecFlow.BrowserStack
 		[BeforeScenario]
 		public void BeforeScenario()
 		{
-			if (Process.GetProcessesByName("BrowserStackLocal").Length == 0)
-				new Process
-				{
-					StartInfo = new ProcessStartInfo
-					{
-						FileName = "BrowserStackLocal.exe",
-						Arguments = ConfigurationManager.AppSettings["browserstack.key"] + " -forcelocal"
-					}
-				}.Start();
-
-
 			var capabilities = new DesiredCapabilities();
 
-			capabilities.SetCapability(CapabilityType.Version, ConfigurationManager.AppSettings["version"]);
 			capabilities.SetCapability("os", ConfigurationManager.AppSettings["os"]);
 			capabilities.SetCapability("os_version", ConfigurationManager.AppSettings["os_version"]);
-			capabilities.SetCapability("browserName", ConfigurationManager.AppSettings["browser"]);
-			
-			capabilities.SetCapability("browserstack.user", ConfigurationManager.AppSettings["browserstack.user"]);
+			capabilities.SetCapability("browser", ConfigurationManager.AppSettings["browser"]);
+      capabilities.SetCapability("browser_version", ConfigurationManager.AppSettings["browser_version"]);
+
+      capabilities.SetCapability("browserstack.user", ConfigurationManager.AppSettings["browserstack.user"]);
 			capabilities.SetCapability("browserstack.key", ConfigurationManager.AppSettings["browserstack.key"]);
-			capabilities.SetCapability("browserstack.local", true);
 			
-			capabilities.SetCapability("project", "BrowserStack Demo");
+			capabilities.SetCapability("build", "Sample Specflow tests");
 			capabilities.SetCapability("name", ScenarioContext.Current.ScenarioInfo.Title);
 
-			driver = new RemoteWebDriver(new Uri(ConfigurationManager.AppSettings["browserstack.hub"]), capabilities);
+      driver = new RemoteWebDriver(new Uri(ConfigurationManager.AppSettings["browserstack.hub"]), capabilities);
 			driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(1));
 			ScenarioContext.Current["driver"] = driver;
 		}
