@@ -6,7 +6,7 @@ Execute [SpecFlow](https://github.com/techtalk/SpecFlow) scripts on BrowserStack
 
 ### Prerequisites
 
-Visual Studio Update 2
+Visual Studio 2015 Update 2
 To run tests in parallel, you will need to have access to execute `powershell` tools (`Run as Administrator` on `Command Prompt` works)
 
 ### Clone the repo
