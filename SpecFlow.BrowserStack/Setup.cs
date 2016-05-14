@@ -36,7 +36,7 @@ namespace SpecFlow.BrowserStack
 			
 			capabilities.SetCapability("browserstack.user", ConfigurationManager.AppSettings["browserstack.user"]);
 			capabilities.SetCapability("browserstack.key", ConfigurationManager.AppSettings["browserstack.key"]);
-			capabilities.SetCapability("browserstack.local", true);
+			//capabilities.SetCapability("browserstack.local", true);
 			
 			capabilities.SetCapability("project", "BrowserStack Demo");
 			capabilities.SetCapability("name", ScenarioContext.Current.ScenarioInfo.Title);
