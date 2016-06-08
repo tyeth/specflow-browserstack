@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelTests", "ParallelTests\ParallelTests.csproj", "{E506B9AC-13A8-4275-9045-45412D93AE4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{925E0612-77F8-459D-8100-87AFA52B581A}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		MacELCFirefox46|Any CPU = MacELCFirefox46|Any CPU
+		RunInParallel|Any CPU = RunInParallel|Any CPU
+		Win10Chrome50|Any CPU = Win10Chrome50|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.MacELCFirefox46|Any CPU.ActiveCfg = MacELCFirefox46|Any CPU
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.MacELCFirefox46|Any CPU.Build.0 = MacELCFirefox46|Any CPU
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.RunInParallel|Any CPU.ActiveCfg = RunInParallel|Any CPU
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.RunInParallel|Any CPU.Build.0 = RunInParallel|Any CPU
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.Win10Chrome50|Any CPU.ActiveCfg = Win10Chrome50|Any CPU
+		{E506B9AC-13A8-4275-9045-45412D93AE4E}.Win10Chrome50|Any CPU.Build.0 = Win10Chrome50|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
