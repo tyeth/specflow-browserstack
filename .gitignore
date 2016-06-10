@@ -1,4 +1,6 @@
 packages/
+**/bin
+**/obj
 SpecFlow.BrowserStack/bin/
 SpecFlow.BrowserStack/obj/
 SpecFlow.BrowserStack.LocalTests/bin/
