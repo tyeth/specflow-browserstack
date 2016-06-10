@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
@@ -22,19 +21,17 @@ namespace SpecFlow.BrowserStack.LocalTests
 			_driver.Navigate().GoToUrl("http://www.google.com");
 		}
 
-		[When(@"I search the web")]
-		public void WhenISearchTheWeb()
-		{
-			var q = _driver.FindElement(By.Name("q"));
-			q.SendKeys("BrowserStack");
-			q.Submit();
-		}
+    [When(@"I navigate to (.*)")]
+    public void WhenINavigateTo(String navigateUrl)
+    {
+      _driver.Navigate().GoToUrl(navigateUrl);
+    }
 
-		[Then(@"I get search results")]
-		public void ThenIGetSearchResults()
-		{
-			Thread.Sleep(15000);
-			Assert.That(_driver.FindElement(By.Id("resultStats")).Text, Is.Not.Empty);
-		}
-	}
+    [Then(@"I see status as (.*)")]
+    public void ThenISeeStatusAs(String expectedStatus)
+    {
+      StringAssert.Contains(_driver.FindElement(By.TagName("pre")).Text.Trim().ToLower(), "up and running");
+    }
+
+  }
 }

@@ -64,18 +64,18 @@ namespace SpecFlow.BrowserStack.LocalTests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Searching google with Local")]
-        public virtual void SearchingGoogleWithLocal()
+        [NUnit.Framework.DescriptionAttribute("Checking Local connection Status")]
+        public virtual void CheckingLocalConnectionStatus()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Searching google with Local", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checking Local connection Status", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
 testRunner.Given("I am on the google page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 5
-testRunner.When("I search the web", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("I navigate to http://localhost:45691/check", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 6
-testRunner.Then("I get search results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("I see status as up and running", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
