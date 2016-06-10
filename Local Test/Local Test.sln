@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local Test", "Local Test\Local Test.csproj", "{84912CA9-6243-428C-8422-AADF3B2E0DF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		MacELCFirefox46|Any CPU = MacELCFirefox46|Any CPU
+		Win10Chrome50|Any CPU = Win10Chrome50|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84912CA9-6243-428C-8422-AADF3B2E0DF7}.MacELCFirefox46|Any CPU.ActiveCfg = MacELCFirefox46|Any CPU
+		{84912CA9-6243-428C-8422-AADF3B2E0DF7}.MacELCFirefox46|Any CPU.Build.0 = MacELCFirefox46|Any CPU
+		{84912CA9-6243-428C-8422-AADF3B2E0DF7}.Win10Chrome50|Any CPU.ActiveCfg = Win10Chrome50|Any CPU
+		{84912CA9-6243-428C-8422-AADF3B2E0DF7}.Win10Chrome50|Any CPU.Build.0 = Win10Chrome50|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
