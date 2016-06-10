@@ -30,6 +30,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Parallel|AnyCPU'">
     <OutputPath>bin\Parallel\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ParallelLocal|AnyCPU'">
+    <OutputPath>bin\ParallelLocal\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BrowserStackLocal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BrowserStackLocal.1.0.0.0\lib\net20\BrowserStackLocal.dll</HintPath>

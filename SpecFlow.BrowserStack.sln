@@ -17,6 +17,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		MacELCFirefox46|Any CPU = MacELCFirefox46|Any CPU
 		Parallel|Any CPU = Parallel|Any CPU
+		ParallelLocal|Any CPU = ParallelLocal|Any CPU
 		Win10Chrome50|Any CPU = Win10Chrome50|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -24,12 +25,16 @@ Global
 		{C8918B17-B061-4203-AB23-CB22BCE8C721}.MacELCFirefox46|Any CPU.Build.0 = MacELCFirefox46|Any CPU
 		{C8918B17-B061-4203-AB23-CB22BCE8C721}.Parallel|Any CPU.ActiveCfg = Parallel|Any CPU
 		{C8918B17-B061-4203-AB23-CB22BCE8C721}.Parallel|Any CPU.Build.0 = Parallel|Any CPU
+		{C8918B17-B061-4203-AB23-CB22BCE8C721}.ParallelLocal|Any CPU.ActiveCfg = ParallelLocal|Any CPU
+		{C8918B17-B061-4203-AB23-CB22BCE8C721}.ParallelLocal|Any CPU.Build.0 = ParallelLocal|Any CPU
 		{C8918B17-B061-4203-AB23-CB22BCE8C721}.Win10Chrome50|Any CPU.ActiveCfg = Win10Chrome50|Any CPU
 		{C8918B17-B061-4203-AB23-CB22BCE8C721}.Win10Chrome50|Any CPU.Build.0 = Win10Chrome50|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.MacELCFirefox46|Any CPU.ActiveCfg = MacELCFirefox46|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.MacELCFirefox46|Any CPU.Build.0 = MacELCFirefox46|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.Parallel|Any CPU.ActiveCfg = Parallel|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.Parallel|Any CPU.Build.0 = Parallel|Any CPU
+		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.ParallelLocal|Any CPU.ActiveCfg = ParallelLocal|Any CPU
+		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.ParallelLocal|Any CPU.Build.0 = ParallelLocal|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.Win10Chrome50|Any CPU.ActiveCfg = Win10Chrome50|Any CPU
 		{9B9AE554-4814-4682-9532-8DD65C41FAF4}.Win10Chrome50|Any CPU.Build.0 = Win10Chrome50|Any CPU
 	EndGlobalSection

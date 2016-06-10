@@ -36,6 +36,9 @@ $frameworkDirs = @((Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\MSBuild\Too
     Start-Job -ScriptBlock {
         param($configuration, $basePath)
 
+		if ($configuration -Match "Parallel") {
+			continue
+		}
         try
         {
 			& $basePath\packages\NUnit.Runners.2.6.4\tools\nunit-console.exe /labels /out=$basePath\nunit_$configuration.txt /xml:$basePath\nunit_$configuration.xml /nologo /config:$configuration "$basePath/SpecFlow.BrowserStack/bin/$configuration/SpecFlow.BrowserStack.dll"

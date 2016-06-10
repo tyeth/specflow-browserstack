@@ -3,11 +3,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Parallel|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</StartProgram>
-    <StartArguments>C:\Users\Admin\Desktop\specflow-browserstack\build_local.ps1</StartArguments>
+    <StartArguments>C:\Users\Admin\Desktop\specflow-browserstack\build.ps1</StartArguments>
     <StartWorkingDirectory>C:\Users\Admin\Desktop\specflow-browserstack</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup>
     <ReferencePath>
     </ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ParallelLocal|AnyCPU'">
+    <StartProgram>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</StartProgram>
+    <StartWorkingDirectory>C:\Users\Admin\Desktop\specflow-browserstack</StartWorkingDirectory>
+    <StartArguments>C:\Users\Admin\Desktop\specflow-browserstack\build_local.ps1</StartArguments>
+    <StartAction>Program</StartAction>
   </PropertyGroup>
 </Project>
