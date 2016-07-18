@@ -1,15 +1,16 @@
-﻿using System.Reflection;
+﻿using NUnit.Framework;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SpecFlow.BrowserStack.LocalTests")]
+[assembly: AssemblyTitle("SpecFlow-BrowserStack")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SpecFlow.BrowserStack.LocalTests")]
+[assembly: AssemblyProduct("SpecFlow-BrowserStack")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +21,9 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9b9ae554-4814-4682-9532-8dd65c41faf4")]
+[assembly: Guid("445d58cf-ed98-4c47-9e51-7eef066305ff")]
+
+[assembly: Parallelizable(ParallelScope.Fixtures)]
 
 // Version information for an assembly consists of the following four values:
 //
