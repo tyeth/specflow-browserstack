@@ -7,8 +7,8 @@ Scenario Outline: Can find search results
 	
 	Examples:
 		| profile	| environment |
-		| single	| chrome      |
+		| single    | chrome      |
 		| parallel	| chrome      |
 		| parallel	| firefox     |
 		| parallel	| safari      |
-		| parallel	| ie		  |
+		| parallel	| ie          |
