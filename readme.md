@@ -1,53 +1,33 @@
-# SpecFlow-Browserstack
+# specflow-browserstack
+[SpecFlow](http://www.specflow.org/) Integration with BrowserStack.
 
-Execute [SpecFlow](https://github.com/techtalk/SpecFlow) scripts on BrowserStack.
+![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
-## Usage
+<img src ="http://www.specflow.org/media/specflow_logo.png" height = "122">
 
-### Prerequisites
+## Setup
+* Clone the repo
+* Open the solution `SpecFlow-BrowserStack.sln` in Visual Studio 2015 Update 2
+* Build the solution
+* Update `App.config` file with your BrowserStack Username and Access Key(https://www.browserstack.com/accounts/settings)
 
-Visual Studio 2015 Update 2
-To run tests in parallel, you will need to have access to execute `powershell` tools (`Run as Administrator` on `Command Prompt` works)
+## Running your tests from Test Explorer via NUnit Test Adapter
+- To run a single test, run test with fixture `single`
+- To run parallel tests, run tests with fixture `parallel`
+- To run local tests, run test with fixture `local`
 
-### Clone the repo
+## Notes
+* You can view your test results on the [BrowserStack automate dashboard](https://www.browserstack.com/automate)
+* To test on a different set of browsers, check out our [platform configurator](https://www.browserstack.com/automate/c-sharp#setting-os-and-browser)
+* You can export the environment variables for the Username and Access Key of your BrowserStack account
 
-`git clone https://github.com/browserstack/specflow-browserstack.git`
+  ```
+  export BROWSERSTACK_USERNAME=<browserstack-username> &&
+  export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
+  ```
 
-### Install dependencies
-
-Open the appropriate Visual Studio Solution file (.sln) and run `build`.
-Visual Studio will automatically download the dependencies
-
-### BrowserStack Authentication
-
-To run the tests, `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` needs to be replaced with BrowserStack authentication.
-These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate)
-
-These needs to be changed in the following files -
-
-```
-SpecFlow.BrowserStack/App.config
-SpecFlow.BrowserStack.LocalTests/App.config
-```
-
-### Run the tests
-
-The `NUnitTestAdapter` dependency provides a way to test from Visual Studio itself.
-Just build the solution and, to run the tests -
-Go to the `tests` menu -> In the `Run` sub-menu -> Click `All tests`
-
-You can choose from `MacELCFirefox46` or `Win10Chrome50` build configurations. You can add your own configurations for different os/browser combinations.
-
-To run the tests in parallel, powershell scripts are included in the sample, run `powershell.exe build.ps1` or `powershell.exe build_local.ps1`
-
-example -
-```
-C:\Users\Admin\Desktop\specflow-browserstack>C:\windows\system32\windowspowershell\v1.0\powershell.exe C:\Users\Admin\Desktop\specflow-browserstack\build.ps1
-C:\Users\Admin\Desktop\specflow-browserstack>C:\windows\system32\windowspowershell\v1.0\powershell.exe C:\Users\Admin\Desktop\specflow-browserstack\build_local.ps1
-```
-
-------
-
-#### How to specify the capabilities
-
-The [Code Generator](https://www.browserstack.com/automate/c-sharp#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
+## Additional Resources
+* [Documentation for writing automate test scripts in C#](https://www.browserstack.com/automate/c-sharp)
+* [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
+* [Browsers & mobile devices for selenium testing on BrowserStack](https://www.browserstack.com/list-of-browsers-and-platforms?product=automate)
+* [Using REST API to access information about your tests via the command-line interface](https://www.browserstack.com/automate/rest-api)
