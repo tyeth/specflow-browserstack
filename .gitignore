@@ -1,10 +1,9 @@
 packages/
-SpecFlow.BrowserStack/bin/
-SpecFlow.BrowserStack/obj/
-SpecFlow.BrowserStack.LocalTests/bin/
-SpecFlow.BrowserStack.LocalTests/obj/
+bin
+obj
 *.user
 *.suo
 *.html
 *.txt
 *.xml
+*.features.cs
